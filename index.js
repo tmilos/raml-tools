@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var commandLineArgs = require('command-line-args')
 var error = require('./src/error')
 
