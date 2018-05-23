@@ -1,0 +1,26 @@
+{
+  "name": "raml-tools",
+  "version": "1.0.0",
+  "description": "CLI RAML and Swagger tools - generate flat RAML, generate swagger from RAML, generate swagger ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milos Tomic <tmilos@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^6.5.0",
+    "command-line-args": "^5.0.2",
+    "command-line-usage": "^5.0.5",
+    "flat-raml": "^1.2.3",
+    "http-server": "^0.11.1",
+    "ncp": "^2.0.0",
+    "oas-raml-converter": "^1.1.32",
+    "osprey-mock-service": "^0.4.0",
+    "rimraf": "^2.6.2",
+    "swagger-ui-dist": "^3.14.2"
+  },
+  "bin": {
+    "raml-tools": "./index.js"
+  }
+}
