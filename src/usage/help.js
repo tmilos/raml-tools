@@ -23,6 +23,9 @@ module.exports = [
             }, {
                 name: "http",
                 description: "Runs static http server"
+            }, {
+                name: "mock",
+                description: "Runs mock API serevr for the given flat RAML file"
             }
         ]
     }

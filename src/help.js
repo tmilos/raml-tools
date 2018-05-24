@@ -7,7 +7,8 @@ var valid = {
     'flat': './usage/flat',
     'swagger': './usage/swagger',
     'ui': './usage/ui',
-    'http': './usage/http'
+    'http': './usage/http',
+    'mock': './usage/mock'
 }
 
 function main(argv) {

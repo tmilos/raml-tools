@@ -27,6 +27,9 @@ switch (options.command) {
     case 'http':
         cmd = require('./src/http')
         break;
+    case 'mock':
+        cmd = require('./src/mock')
+        break;
     default:
         console.log(`Unknown command ${options.command}`)
         cmd = require('./src/help')

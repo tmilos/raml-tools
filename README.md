@@ -62,3 +62,16 @@ $ raml-tools http [options]
 Options:
 * **-d**, **--destination* _dir_ - Directory to use as server root.
 * **-o**, **--open* - Open browser automatically
+
+
+## Mock
+
+Runs mock API serevr for the given flat RAML file
+
+```bash
+$ raml-tools mock [options]
+```
+
+Options:
+* **-f**, **--file* _ramlFile_ - Flat RAML file to mock.
+* **-p**, **--port* - Port to run server on, defaults to 3001
