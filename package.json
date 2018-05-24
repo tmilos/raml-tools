@@ -1,6 +1,6 @@
 {
   "name": "raml-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI RAML and Swagger tools - generate flat RAML, generate swagger from RAML, generate swagger ui",
   "main": "index.js",
   "scripts": {
