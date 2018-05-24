@@ -49,13 +49,6 @@ function onConverted(swagger, options) {
         json.servers = []
     }
 
-    if (options.server) {
-        options.server = Array.isArray(options.server) ? options.server: [options.server] 
-        options.server.forEach(element => {
-            json.servers.push({ url: element})
-        });
-    }
-
     if (options['base-uri']) {
         json.servers.push({
             url: '{baseUri}',
@@ -65,6 +58,13 @@ function onConverted(swagger, options) {
                 }
             }
         })
+    }
+
+    if (options.server) {
+        options.server = Array.isArray(options.server) ? options.server: [options.server] 
+        options.server.forEach(element => {
+            json.servers.push({ url: element})
+        });
     }
 
     var string = JSON.stringify(json, null, 4)
