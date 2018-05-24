@@ -17,6 +17,11 @@ module.exports = [
                 name: "open",
                 alias: 'o',
                 description: "Open browser automatically"
+            }, {
+                name: "port",
+                alias: 'p',
+                typeLabel: "{underline portNumber}",
+                description: "Port to run server on, defaults to 3000"
             }
         ]
     }

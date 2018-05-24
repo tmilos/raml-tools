@@ -33,8 +33,8 @@ $ raml-tools swagger file [options]
 Options:
 * **--save** _destination_ - Save flatten RAML into specified *destination* file.
 * **-c**, **--clear-server** - Clears any servers defined in RAML, so the result will contain only those added with -s option
-* **-s**, **--server* _serverUrl_ - Additional server url(s). Can be repeated multiple times.
-* **-b**, **--base-uri* _defaultValue_ - Add server url as variable with the given value.
+* **-s**, **--server** _serverUrl_ - Additional server url(s). Can be repeated multiple times.
+* **-b**, **--base-uri** _defaultValue_ - Add server url as variable with the given value.
 
 
 ## UI
@@ -46,9 +46,9 @@ $ raml-tools ui [options]
 ```
 
 Options:
-* **-s**, **--source* _swaggerJsonFile_ - Swagger file to use in UI.
-* **-d**, **--destination* _dir_ - Destination directory where to generate swagger UI.
-* **-o**, **--open* - Start http server and open generated swagger UI.
+* **-s**, **--source** _swaggerJsonFile_ - Swagger file to use in UI.
+* **-d**, **--destination** _dir_ - Destination directory where to generate swagger UI.
+* **-o**, **--open** - Start http server and open generated swagger UI.
 
 
 ## Http
@@ -60,8 +60,9 @@ $ raml-tools http [options]
 ```
 
 Options:
-* **-d**, **--destination* _dir_ - Directory to use as server root.
-* **-o**, **--open* - Open browser automatically
+* **-d**, **--destination** _dir_ - Directory to use as server root.
+* **-o**, **--open** - Open browser automatically
+* **-p**, **--port** - Port to run server on, defaults to 3000
 
 
 ## Mock
@@ -73,5 +74,5 @@ $ raml-tools mock [options]
 ```
 
 Options:
-* **-f**, **--file* _ramlFile_ - Flat RAML file to mock.
-* **-p**, **--port* - Port to run server on, defaults to 3001
+* **-f**, **--file** _ramlFile_ - Flat RAML file to mock.
+* **-p**, **--port** - Port to run server on, defaults to 3001

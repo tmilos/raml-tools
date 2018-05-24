@@ -6,7 +6,8 @@ var error = require('./error')
 function main(argv) {
     var defn = [
         { name: 'destination', alias: 'd', type: String, multiple: false },
-        { name: 'open', alias: 'o', type: Boolean, multiple: false }
+        { name: 'open', alias: 'o', type: Boolean, multiple: false },
+        { name: 'port', alias: 'p', type: Number, multiple: false }
     ]
     var options = commandLineArgs(defn, { argv: argv })
 
@@ -14,7 +15,7 @@ function main(argv) {
         error('Web server root directory must be specified. Use -d option')
     }
 
-    var host = '0.0.0.0', port = 3000;
+    var host = '0.0.0.0', port = options.port || 3000;
     var canonicalHost = host === '0.0.0.0' ? '127.0.0.1' : host
     var protocol = 'http://'
     var url = `http://${canonicalHost}:${port}`
